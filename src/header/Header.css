@@ -1,14 +1,21 @@
 
-.active{
-    background-color: brown;
-    color: rgb(230, 230, 240);
-  
+.nav a.active{
+   border-bottom: 4px solid rgb(172, 4, 4);
+ 
+}
+.nav2 a.active{
+   border-bottom: 4px solid rgb(172, 4, 4);
+ 
+ text-decoration-line: underline;
+ text-decoration-color: brown;
 }
 
 
 header{
     position: fixed;
+    background-color: rgba(1, 1, 83, 0.678);
     top: -5px;
+   color: antiquewhite;
     height:70px;
     width: 100vw;    
 z-index: 1;
@@ -31,13 +38,13 @@ cursor: pointer;
 
 .myLogo a{
     text-decoration: none;
-    color: white;
+   
     opacity: 0.7;
-    
-    box-shadow: 0 0 20px white;
+    color: antiquewhite;
+   font-weight: 600;
     border-radius: 15px;
    padding: 8px 10px;
-    font-size: 20px;
+    font-size: 22px;
 }
 .myLogo a:hover{
     opacity: 1;
@@ -65,16 +72,23 @@ cursor: pointer;
 }
 .nav a{
     text-decoration: none;
-    color: rgb(243, 248, 243);
+    color: white;
    width: 100%;
    text-align: center;
-   border-radius: 15px;
+   font-weight: 600;
+   border-radius: 4px;
 }
 
 
 .nav a:not(.active):hover{
     transform: scale(1.1);
-    box-shadow: 0 0 20px ;
+   
+   
+    transition-duration:0.5s;
+}
+.nav2 a :not(.active):hover{
+    transform: scale(1.1);
+   
    
     transition-duration:0.5s;
 }
