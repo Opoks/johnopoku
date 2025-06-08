@@ -1,0 +1,205 @@
+.my-contact{
+   
+   padding: 0 20px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    grid-template-rows:37vh 10vh 50vh ;
+   
+ 
+}
+.contact{
+    background-color: rgb(27, 6, 102);
+    
+    margin-top: 120px;
+  justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+     width: 80%;
+     border-radius: 10px;
+     box-shadow: 0 0 20px rgb(17, 4, 65) inset;
+}
+.contact label{
+    font-size: 20px;
+}
+.contact input{
+    font-size: 20px;
+    background-color: transparent;
+    color: rgb(103, 235, 103);
+    border: none;
+}
+ .sociall{
+  
+   
+    font-size:30px;
+   width: 100%;
+    display: flex;
+   overflow: hidden;
+   justify-content: center;
+    gap:30px;
+    align-items: center;
+   
+    padding: 10px ;
+    
+}
+.sociall a{
+   
+    color: rgb(121, 197, 121);
+    border-radius: 8px;
+    display: flex;
+    padding: 4px;
+    margin: 0;
+    width: 40px;
+    
+    transition: 1s ease;
+}
+.sociall a:hover{
+   
+    align-items: center;
+    width: 130px;
+    box-shadow: 0 0 20px ;
+    
+    color: rgb(253, 252, 252);
+    overflow: hidden;
+    text-decoration: none;
+   
+}
+
+.sociall a:hover:nth-child(1)::after{
+    content: 'Facebook';
+   font-size: 20px;
+   color: aqua;
+   margin-left: 4px;
+}
+.sociall a:hover:nth-child(2)::after{
+    content: 'Instagram';
+     font-size: 20px;
+   color: aqua;
+   margin-left: 4px;
+}
+.sociall a:hover:nth-child(3)::after{
+    content: 'LinkedIn';
+      font-size: 20px;
+   color: aqua;
+   margin-left: 4px;
+}
+.sociall a:hover:nth-child(4)::after{
+    content: 'WhatsApp';
+      font-size: 20px;
+   color: aqua;
+   margin-left: 4px;
+}
+form{
+    
+    padding: 20px 60px;
+}
+.form-wrapper{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+form .inp {
+    width: 60%;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+form .inpb{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-top:10px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: rgb(109, 253, 109);
+    cursor: pointer;
+    opacity: 0.7;
+    
+}
+form .inpb:hover{
+    opacity: 1;
+}
+
+form label{
+    font-size: 24px;
+}
+textarea{
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+    height:140px;
+}
+
+
+@media(max-width:600px){
+    .contact{
+        padding: 0;
+        width: 100%;
+    }
+    .contact label{
+        font-size: 18px;
+    }
+    .contact input{
+        font-size: 18px;
+    }
+
+    .sociall a{
+        font-size: 20px;
+    }
+    .form-wrapper{
+        grid-template-columns: 1fr;
+    }
+    form{
+        padding: 0;
+    }
+   form .inp{
+        margin-bottom: 20px;
+        height: 30px;
+        font-size: 18px;
+    }
+    form label{
+        font-size: 18px;
+    }
+}
+
+@media (min-width:767px) and (max-width:1023px){
+    .form-wrapper{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media(min-width:1024px) and (orientation:portrait){
+    .form-wrapper{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+@media(orientation:landscape){
+    .my-contact{
+        grid-template-rows: 100px 90px 400px;
+    }
+    .sociall{
+    
+      height: 60px;
+        margin-top:90px;
+        margin-bottom: 40px;
+    }
+    form{
+        margin-top: 30px;
+    }
+    .form-wrapper{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+   form .inp{
+        height:40px;
+    }
+}

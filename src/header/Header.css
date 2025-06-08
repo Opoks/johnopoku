@@ -1,0 +1,96 @@
+
+.active{
+    background-color: brown;
+    color: rgb(230, 230, 240);
+  
+}
+
+
+header{
+    position: fixed;
+    top: -5px;
+    height:70px;
+    width: 100vw;    
+z-index: 1;
+    display: grid;
+    grid-template-columns: 22% 70%;
+    backdrop-filter: blur(11px);
+    align-items: center;
+  box-shadow: 0 0 20px;
+  padding: 0 20px;
+}
+ header .menu{
+    display: none;
+ }
+.myLogo{
+
+cursor: pointer;
+
+
+}
+
+.myLogo a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    
+    box-shadow: 0 0 20px white;
+    border-radius: 15px;
+   padding: 8px 10px;
+    font-size: 20px;
+}
+.myLogo a:hover{
+    opacity: 1;
+   
+}
+.myLogo:hover{
+   transform: scale(1.1);
+   transition-duration:1s;
+ 
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   gap: 30px;
+ margin: 0;
+ 
+  align-items: center;
+}
+.nav a li{
+    list-style: none;
+  font-size: 20px;
+   padding: 9px 10px;
+   
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(243, 248, 243);
+   width: 100%;
+   text-align: center;
+   border-radius: 15px;
+}
+
+
+.nav a:not(.active):hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px ;
+   
+    transition-duration:0.5s;
+}
+
+   .nav2{
+   
+  display: none;
+   }
+   
+.close{
+    display: none;
+    margin-top: 10px;
+    height: 50px;
+   justify-content:right;
+    padding-right:20px;
+    align-items: center;
+    font-size: 50px
+  
+}
