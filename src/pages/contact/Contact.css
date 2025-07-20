@@ -1,5 +1,5 @@
 .my-contact{
-   
+   overflow-x:hidden;
    padding: 0 20px;
     display: grid;
     text-align: center;
@@ -128,6 +128,7 @@ form .inpb:hover{
 
 form label{
     font-size: 24px;
+ 
 }
 textarea{
     border-radius: 10px;
@@ -168,16 +169,16 @@ textarea{
     }
 }
 
-@media (min-width:767px) and (max-width:1023px){
+@media (min-width:600px) and (max-width:1023px){
     .form-wrapper{
         grid-template-columns: 1fr;
         gap: 20px;
     }
 }
 
-@media(min-width:1024px) and (orientation:portrait){
+@media(min-width:1023px) and (orientation:portrait){
     .form-wrapper{
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr ;
         gap: 30px;
     }
     
@@ -185,6 +186,8 @@ textarea{
 @media(orientation:landscape){
     .my-contact{
         grid-template-rows: 100px 90px 400px;
+        padding-left: 0;
+        margin-left: 8px;
     }
     .sociall{
     
@@ -194,14 +197,32 @@ textarea{
     }
     form{
         margin-top: 30px;
+        margin-left: 0;
+        padding-left: 0;
+      
     }
+    form .input-div{
+        display: grid;
+        grid-template-columns: 30% 120%;
+        gap: 4px;
+        width: 100%;
+        align-items: center;
+        padding-left: 0;
+        margin-left: 0;
+       
+    }
+   
     .form-wrapper{
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns:50% 50%;
+        gap:30px;
+        padding-left: 0;
+        margin-left: 0;
     }
    form .inp{
         height:40px;
-        width: 500px;
+      
+        margin-left: -10px;
+       
     }
     form textarea{
         width: 500px;

@@ -1,14 +1,9 @@
 
-.nav a.active{
+ .activee{
    border-bottom: 4px solid rgb(172, 4, 4);
  
 }
-.nav2 a.active{
-   border-bottom: 4px solid rgb(172, 4, 4);
- 
- text-decoration-line: underline;
- text-decoration-color: brown;
-}
+
 
 
 header{
@@ -25,6 +20,7 @@ z-index: 1;
     align-items: center;
   box-shadow: 0 0 20px;
   padding: 0 20px;
+  justify-content: space-between;
 }
  header .menu{
     display: none;
@@ -64,13 +60,14 @@ cursor: pointer;
  
   align-items: center;
 }
-.nav a li{
+.nav li{
     list-style: none;
   font-size: 20px;
    padding: 9px 10px;
-   
+   width: 100px;
+   text-align: center;
 }
-.nav a{
+.nav li a{
     text-decoration: none;
     color: white;
    width: 100%;
@@ -80,13 +77,13 @@ cursor: pointer;
 }
 
 
-.nav a:not(.active):hover{
+.nav li:not(.activee):hover{
     transform: scale(1.1);
    
    
     transition-duration:0.5s;
 }
-.nav2 a :not(.active):hover{
+.nav2 li:not(.activee):hover{
     transform: scale(1.1);
    
    

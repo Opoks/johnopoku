@@ -32,11 +32,11 @@ const Contact = () => {
       <form action="https://formsubmit.co/184169dce2bee5e901d7876f6f762598" method='POST'>
         <div className='form-wrapper'>
           <div>
-         <div>
+         <div className='input-div'>
           <label htmlFor="name">Your Name: </label>
           <input type="text" id='name1' name='name' className='inp' placeholder="Enter your name..." />
         </div>
-        <div>
+        <div className='input-div'>
            <label htmlFor="email">Your Email: </label>
           <input type="email" id='email2' name='email' className='inp' placeholder="Enter your email..." />
         </div>  

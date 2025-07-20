@@ -30,7 +30,7 @@ align-items: center;
  grid-template-columns: 1fr;
     align-items: center;
    border-radius:20px;
-   height: 140px;
+   height: 180px;
  box-shadow: 0 0 20px white;
    margin-bottom: 20px;
    margin-top: 1px;
@@ -54,13 +54,23 @@ align-items: center;
 .schools{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 5px;
+    gap: 15px;
   text-align: center;
     justify-content: center;
     width:100%;
     padding:10px 20px;
     font-size:16px;
     margin-top:20px;
+}
+
+.range{
+    display: flex;
+    background-color: rgb(163, 162, 161);
+    height: 16px;
+    border-radius: 5px;
+    margin-left: 2px;
+   
+    box-shadow: 0 0 5px rgb(56, 56, 56);
 }
 .schools2{
     display: grid;
@@ -81,10 +91,17 @@ align-items: center;
 .school2-in{
     display: grid;
     grid-template-columns:40% 50% 10%;
+    align-items: center;
+}
+
+.school2-in h3{
+    display:flex;
+    justify-content: end;
+    
 }
 
 i{
-    color: rgb(168, 207, 167);
+    color: rgb(6, 110, 4);
 }
 
 @media(max-width:600px){

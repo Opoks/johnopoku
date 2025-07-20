@@ -3,12 +3,18 @@ import Cards from '../../Cards'
 import birth from '../../assets/birth.jpg'
 import kalcuu from '../../assets/kalcuu1.jpg'
 import todo2 from '../../assets/todo2.jpg'
+import quiz from '../../assets/logo.jpeg'
 import './Project.css'
 const Project = () => {
   return (
     <section>
     <h2 className='head'>PERSONAL PROJECTS</h2>
     <div className='cardcon'>
+        <Cards src={quiz}
+    title="Quizron" 
+    description="This is a quiz app and was built with React js and css "
+    href="https://quizron.netlify.app/"
+    />
         <Cards src={kalcuu}
     title="Kalcuu" 
     description="This is a calculator and was built with html,css and javascript "
