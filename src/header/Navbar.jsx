@@ -4,7 +4,7 @@ import {Outlet, NavLink } from 'react-router-dom'
 const Navbar = ({menus,setMenu}) => {
  const[active,setActive]=useState(0)
   return (
-    <div className={menus===true?"nav-bg":""} onClick={()=>setMenu(false)}>
+    <nav className={menus===true?"nav-bg":""} onClick={()=>setMenu(false)}>
     <ul className={menus?'nav2':'nav'}>
       <span className='close' onClick={()=>setMenu(false)}><IoClose/></span>
        <li className={active===1?'activee':''} onClick={()=>setActive(1)}><NavLink to='/'>Home</NavLink></li>
@@ -14,7 +14,7 @@ const Navbar = ({menus,setMenu}) => {
        
     </ul>
     <Outlet/>
-    </div>
+    </nav>
   )
 }
 

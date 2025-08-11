@@ -16,7 +16,7 @@ My personal portfolio showcasing my skills, projects, and contact details.
 - Showcase of projects with links to GitHub repos and live demos
 
 ## 📷 Screenshots
-![Portfolio Screenshot](screenshot.png)
+![Portfolio Screenshot](./public/Jo.jpg)
 
 ## 📦 Installation
 ```bash

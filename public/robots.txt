@@ -1,0 +1,7 @@
+
+user-agent: *
+Allow: /
+Allow:/about/
+Allow:/project/
+Allow:/contact/
+Sitemap:https://johnopoku.netlify.app/sitemap.xml

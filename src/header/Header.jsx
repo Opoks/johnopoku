@@ -13,7 +13,7 @@ const Header = () => {
  
   return (
     <header>
-    <h4 className='myLogo'><Link to='/'>John Opoku</Link></h4>
+    <h1 className='myLogo'><Link to='/'>John Opoku</Link></h1>
     <Navbar menus={menus} setMenu={setMenu}/>
     <span className='menu' onClick={()=>setMenu(true)}><IoMenu /></span>
     
